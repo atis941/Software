@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rolladen-system';
+  title: string = 'rolladen-system'; //to be deleted
+  buttonText: string= '';
 }

@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LeftsideComponent } from './leftside/leftside.component';
 import { RightsideComponent } from './rightside/rightside.component';
+import { HttpClientModule } from '@angular/common/http'; //HttpClientmodule
+import { RestService } from './rest.service'; //RestService to use HTTP
 
 
 
@@ -19,9 +21,10 @@ import { RightsideComponent } from './rightside/rightside.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule //HttpClientmodule
   ],
-  providers: [],
+  providers: [RestService], //RestService to use HTTP
   bootstrap: [AppComponent]
 })
 export class AppModule { }
